@@ -7,41 +7,50 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="app.js" defer></script>
 </head>
 <body>
 
-  <!-- Sign-up form start -->
+  <div class="card">
+    <div id="card-left">
+      <h1>Stay updated!</h1>
 
-  Stay updated!
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required placeholder="email@company.com">
 
-  Join 60,000+ product managers receiving monthly updates on:
+      <a id="subscribe-button" href="#">Subscribe to monthly newsletter</a>
+    </div>
+    <div id="card-right">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Abstract screen and browser window image">
+    </div>
+  </div>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
 
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
+  <div class="success hide">
+    Thanks for subscribing!
 
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
+    A confirmation email has been sent to ash@loremcompany.com. 
+    Please open it and click the button inside to confirm your subscription.
+  
+    Dismiss message
+  </div>
   <!-- Success message end -->
   
   <div class="attribution">

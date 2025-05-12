@@ -1,0 +1,46 @@
+
+:root {
+    --white: #FFFFFF;
+    --grey: #949494;
+    --blue-800: #242742;
+    --blue-700: #36384D;
+    --red: #FF6155;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--blue-800);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+#subscribe-button:link, #subscribe-button:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  #subscribe-button:hover, #subscribe-button:active {
+    background-color: red;
+  }
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
