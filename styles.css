@@ -19,17 +19,53 @@ body {
 
 .card {
     display: flex;
+    justify-content: space-around;
+    max-width: 900px;
+    height: 500px;
     background-color: var(--white);
     border-radius: 20px;
-    padding: 20px;
+    padding: 5px;
+}
+
+#card-left {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+#card-right {
+    display: flex;
+    width: 40%;
+}
+
+#card-right img {
+    max-width: 315px;
+}
+
+.custom-icon-list {
+    list-style: none;
+}
+
+.custom-icon-list li {
+    background:url('./assets/images/icon-list.svg') no-repeat left center;
+    padding-left: 2rem;
+    margin-bottom: 1em;
+    background-size: 1rem;
 }
 
 .hide {
     display: none;
 }
 
+#subscribe-button {
+    width: 100%;
+    display: block;
+    max-width: 500px;
+}
 #subscribe-button:link, #subscribe-button:visited {
-    background-color: #f44336;
+    background-color: var(--blue-700);
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -42,5 +78,5 @@ body {
   }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { color: var(--grey); font-size: 11px; text-align: center; }
+.attribution a { color: var(--white); }
