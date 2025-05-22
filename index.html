@@ -27,15 +27,18 @@
         <li>Measuring to ensure updates are a success</li>
         <li>And much more!</li>
       </ul>
-      
-      <label for="email">Email address</label>
-      <input type="email" id="email" name="email" required placeholder="email@company.com">
-
-      <a id="subscribe-button" href="#">Subscribe to monthly newsletter</a>
+      <form id="newsletter-form">
+        <label id="email" for="email">Email address</label>
+        <input type="email" id="email" name="email" required placeholder="email@company.com">
+        <a id="subscribe-button" href="#">Subscribe to monthly newsletter</a>
+      </form> 
     </div>
     <div id="card-right">
-      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Abstract screen and browser window image">
-    </div>
+      <picture>
+        <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 430px)">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Abstract screen and browser window image">
+      </picture>
+    </div>  
   </div>
 
 
