@@ -28,7 +28,11 @@
         <li>And much more!</li>
       </ul>
       <form id="newsletter-form">
-        <label id="email" for="email">Email address</label>
+        <div id="label-zone">
+          <label id="email" for="email">Email address</label>
+          <div id="error" class="error-message">Valid email required.</div>
+        </div>
+        
         <input type="email" id="email" name="email" required placeholder="email@company.com">
         <a id="subscribe-button" href="#">Subscribe to monthly newsletter</a>
       </form> 
