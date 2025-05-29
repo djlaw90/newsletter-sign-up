@@ -7,6 +7,12 @@
     --red: #FF6155;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--blue-800);
@@ -14,7 +20,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .main-card {
@@ -93,11 +98,13 @@ body {
 
 .main-card #card-right img {
     width: 100%;
-    max-width: 400px;
+    height: 100%;
 }
 
 picture {
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 .custom-icon-list {
     list-style: none;
@@ -119,9 +126,13 @@ picture {
     width: 100%;
     display: block;
     margin-top: 10px;
-    max-width: 500px;
     transition: background 0.3s ease, box-shadow 0.3s ease;
     border-radius: 5px;
+}
+
+.image-wrapper {
+    flex: 1;
+    display: flex;
 }
 
 
@@ -139,11 +150,8 @@ picture {
     box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3);
   }
 
-  #error {
-    color: red;
-  }
-
   .error {
+    color: red;
     border: 2px solid red;
     background-color: #ffe5e5;
   }
@@ -165,13 +173,30 @@ picture {
 /* Mobile Breakpoints */
 
 @media (max-width: 732px) {
-    .card h1 {
+    .main-card h1 {
         font-size: 2.5em;
         margin-bottom: 10px;
     }
+    .main-card {
+        min-width: 400px;
+        width: 100vw;
+    }
+    #card-right {
+        width: 30%;
+    }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 610px) {
+
+    .main-card #card-right {
+        width: 100vw;
+    }
+
+    .main-card #card-right img {
+        height: auto;
+        max-height: 450px;
+    }
+
     body {
         display: block;
     }
@@ -179,20 +204,16 @@ picture {
         width: 100%;
     }
 
-    #card-right {
-        width: 100%;
-    }
-    .card {
+    .main-card {
         flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
         border-radius: 0px;
         height: 100vh;
+        width: 100vw;
     }
 
-    picture {
-        display: block;
-    }
-
-    .card h1 {
+    .main-card h1 {
         font-size: 2.5em;
         margin-bottom: 10px;
     }
