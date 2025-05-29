@@ -188,6 +188,17 @@ picture {
 
 @media (max-width: 610px) {
 
+    .success-card {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0px;
+        justify-content: center;
+    }
+
+    .button {
+        margin-top: auto !important;
+    }
+
     .main-card #card-right {
         width: 100vw;
     }
