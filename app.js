@@ -10,6 +10,14 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
   const emailValue = emailInput.value.trim();
 
+  const domainPattern = /\.(com|net|org|edu|gov|io|co)$/i;
+
+  if (!emailInput.checkValidity() || !domainPattern.test(emailValue)) {
+    errorMessage.classList.remove('hide');
+    emailInput.classList.add('error');
+    return;
+  }
+
   if (!emailInput.checkValidity()) {
     errorMessage.classList.remove('hide');
     emailInput.classList.add('error');
