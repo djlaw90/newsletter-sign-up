@@ -26,8 +26,7 @@ body {
     display: flex;
     justify-content: space-around;
     max-width: 900px;
-    min-height: 550px;
-    height: 45vh;
+    height: 575px;
     background-color: var(--white);
     border-radius: 20px;
     padding: 5px;
