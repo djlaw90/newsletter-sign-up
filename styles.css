@@ -85,10 +85,14 @@ body {
     border-radius: 5px;
 }
 
-#email {
+#email-label {
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+#email {
+    border: 2px solid lightgrey;
 }
 
 .main-card #card-right {
@@ -123,11 +127,31 @@ picture {
 }
 
 .button {
+    background-color: var(--blue-700);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     width: 100%;
-    display: block;
     margin-top: 10px;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
+    font: inherit;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+  
+  .button:hover {
+    background-image: linear-gradient(45deg, #ff6b6b, #f06595);  
+    box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button:focus,
+.button:active {
+  background-color: var(--blue-700);
+  background-image: none;
+  box-shadow: none;
 }
 
 .image-wrapper {
@@ -136,24 +160,16 @@ picture {
 }
 
 
-.button:link, .button:visited {
-    background-color: var(--blue-700);
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
- .button:hover, .button:active {
-    background-image: linear-gradient(45deg, #ff6b6b, #f06595);  
-    box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3);
-  }
+
 
   .error {
     color: red;
-    border: 2px solid red;
+    border: 2px solid red !important;
     background-color: #ffe5e5;
+  }
+
+  .error-message {
+    color: red;
   }
 
   .hide {
@@ -183,6 +199,9 @@ picture {
     }
     #card-right {
         width: 30%;
+    }
+    input {
+        margin-bottom: 25px;
     }
 }
 

@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <div class="success-card">
+  <div class="success-card hide">
     <img id="success-icon" src="./assets/images/icon-success.svg" alt="orange success checkmark SVG icon">
     <h1>Thanks for subscribing!</h1>
     <p>A confirmation email has been sent to <span class="email-success"><b>johndoe@gmail.com</b></span>.
@@ -25,7 +25,7 @@
        <a class="button" id="dimiss-button" href="#">Dismiss message</a>
   </div>
 
-  <div class="main-card hide">
+  <div class="main-card">
     <div id="card-left">
       <h1>Stay updated!</h1>
 
@@ -35,14 +35,14 @@
         <li>Measuring to ensure updates are a success</li>
         <li>And much more!</li>
       </ul>
-      <form id="newsletter-form">
+      <form id="newsletter-form" novalidate>
         <div id="label-zone">
-          <label id="email" for="email">Email address</label>
+          <label id="email-label" for="email">Email address</label>
           <div class="hide error-message">Valid email required.</div>
         </div>
         
         <input class="email" type="email" id="email" name="email" required placeholder="email@company.com">
-        <a class="button" id="subscribe-button" href="#">Subscribe to monthly newsletter</a>
+        <button class="button" id="subscribe-button" href="#" type="submit">Subscribe to monthly newsletter</button>
       </form> 
     </div>
     <div id="card-right">
